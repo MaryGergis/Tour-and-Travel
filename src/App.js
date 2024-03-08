@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
+import ExploreAndTravel from './components/ExploreAndTravel';
+import ExploreTheWorld from './components/ExploreTheWorld';
+import GuidesThousandSunny from './components/GuidesThousandSunny';
+import Testimonials from './components/Testimonials';
+import FeaturedDestinations from './components/FeaturedDestinations';
+import Footer from './components/Footer';
+import TrendingStories from './components/TrendingStories';
+import './i18n'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <ExploreAndTravel/>
+      <ExploreTheWorld/>
+      <FeaturedDestinations/>
+      <GuidesThousandSunny/>
+      <Testimonials/>
+      <TrendingStories/>
+      <Footer/>
     </div>
   );
 }
